@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/bg_screen2"
+    tools:context=".LaporanMingguanActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/bg_screen1"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_constraintTop_toTopOf="parent"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark"
+        tools:layout_editor_absoluteX="16dp">
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/txtJumlahSapi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:text="Jumlah Total Sapi"
+        app:layout_constraintStart_toStartOf="@+id/toolbar"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <EditText
+        android:id="@+id/edtJumlahSapi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:hint="                             Ekor"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtJumlahSapi"
+        app:layout_constraintEnd_toEndOf="@+id/toolbar"
+        app:layout_constraintStart_toEndOf="@+id/txtJumlahSapi"
+        app:layout_constraintTop_toTopOf="@+id/txtJumlahSapi" />
+
+    <TextView
+        android:id="@+id/txtSapiTreat"
+        android:layout_width="102dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="44dp"
+        android:text="Sapi Treatment"
+        app:layout_constraintStart_toStartOf="@+id/txtJumlahSapi"
+        app:layout_constraintTop_toBottomOf="@+id/txtJumlahSapi" />
+
+    <EditText
+        android:id="@+id/edtSapiTreat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="                             Ekor"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtSapiTreat"
+        app:layout_constraintEnd_toEndOf="@+id/edtJumlahSapi"
+        app:layout_constraintStart_toStartOf="@+id/edtJumlahSapi"
+        app:layout_constraintTop_toTopOf="@+id/txtSapiTreat" />
+
+    <TextView
+        android:id="@+id/txtSapiBunting"
+        android:layout_width="102dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="44dp"
+        android:text="Sapi Bunting"
+        app:layout_constraintStart_toStartOf="@+id/txtSapiTreat"
+        app:layout_constraintTop_toBottomOf="@+id/txtSapiTreat" />
+
+    <EditText
+        android:id="@+id/edtSapiBunting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="                             Ekor"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtSapiBunting"
+        app:layout_constraintEnd_toEndOf="@+id/edtSapiTreat"
+        app:layout_constraintStart_toStartOf="@+id/edtSapiTreat"
+        app:layout_constraintTop_toTopOf="@+id/txtSapiBunting" />/>
+
+    <TextView
+        android:id="@+id/txtSapiLahir"
+        android:layout_width="102dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="40dp"
+        android:text="Sapi Lahir"
+        app:layout_constraintStart_toStartOf="@+id/txtSapiBunting"
+        app:layout_constraintTop_toBottomOf="@+id/txtSapiBunting" />
+
+    <EditText
+        android:id="@+id/edtSapiLahir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="                             Ekor"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtSapiLahir"
+        app:layout_constraintStart_toStartOf="@+id/edtSapiBunting"
+        app:layout_constraintTop_toTopOf="@+id/txtSapiLahir" />
+
+    <TextView
+        android:id="@+id/txtSapiAnakan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:text="Sapi Anakan"
+        app:layout_constraintStart_toStartOf="@+id/txtSapiLahir"
+        app:layout_constraintTop_toBottomOf="@+id/txtSapiLahir" />
+
+    <EditText
+        android:id="@+id/edtSapiAnakan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="                             Ekor"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtSapiAnakan"
+        app:layout_constraintEnd_toEndOf="@+id/edtSapiLahir"
+        app:layout_constraintStart_toStartOf="@+id/edtSapiLahir"
+        app:layout_constraintTop_toTopOf="@+id/txtSapiAnakan" />
+
+
+    <TextView
+        android:id="@+id/txtSapiSakit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:text="Sapi Sakit"
+        app:layout_constraintStart_toStartOf="@+id/txtSapiAnakan"
+        app:layout_constraintTop_toBottomOf="@+id/txtSapiAnakan" />
+
+    <EditText
+        android:id="@+id/edtSapiSakit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="                             Ekor"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtSapiSakit"
+        app:layout_constraintEnd_toEndOf="@+id/edtSapiAnakan"
+        app:layout_constraintStart_toStartOf="@+id/edtSapiAnakan"
+        app:layout_constraintTop_toTopOf="@+id/txtSapiSakit" />
+
+    <TextView
+        android:id="@+id/txtProduksiSusu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Produksi Susu"
+        app:layout_constraintStart_toStartOf="@+id/txtSapiSakit"
+        app:layout_constraintTop_toBottomOf="@+id/txtSapiSakit" />
+
+    <EditText
+        android:id="@+id/edtProduksi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="                             Liter"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtProduksiSusu"
+        app:layout_constraintEnd_toEndOf="@+id/edtSapiSakit"
+        app:layout_constraintStart_toStartOf="@+id/edtSapiSakit"
+        app:layout_constraintTop_toTopOf="@+id/txtProduksiSusu" />
+</androidx.constraintlayout.widget.ConstraintLayout>

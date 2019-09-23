@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">CaltyFarm</string>
+    <string name="next">LANJUT</string>
+    <string name="skip">LEWATI</string>
+    <string name="prev">Kode OTP</string>
+    <string name="prev1">Verifikasi</string>
+    <string name="input_sapi">Input Data Sapi</string>
+    <string name="lap_mingguan">Laporan Mingguan</string>
+    <string name="title_activity_kode_otp">KodeOTPActivity</string>
+
+    <string-array name="Breed_Sapi">
+        <item>Jenis Breed</item>
+        <item>Bali</item>
+        <item>Brahman</item>
+        <item>Brahman X</item>
+        <item>FH (Friesian Holstein)</item>
+        <item>Kerbau</item>
+        <item>Limousin</item>
+        <item>Limpo</item>
+        <item>Nelore</item>
+        <item>Peranakan Ongole</item>
+        <item>Simental</item>
+        <item>Simpo</item>
+        <item>Wagyu</item>
+    </string-array>
+
+    <string-array name="Jenis_Kelamin">
+        <item>Betina</item>n
+        <item>Jantan</item>
+    </string-array>
+
+    <string-array name="Obat_Cacing">
+        <item>Pilih Status</item>
+        <item>Sudah</item>n
+        <item>Belum</item>
+    </string-array>
+</resources>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "822623733361",
+    "firebase_url": "https://caltyfarm-2f3e8.firebaseio.com",
+    "project_id": "caltyfarm-2f3e8",
+    "storage_bucket": "caltyfarm-2f3e8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:822623733361:android:0751b0b9cefd884fb9bdd0",
+        "android_client_info": {
+          "package_name": "com.andhikapanjiprasetyo.caltyfarm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "822623733361-70r10b09dtbqkbv7tllit8lp2gedf8tn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.andhikapanjiprasetyo.caltyfarm",
+            "certificate_hash": "24ea36b8cb82bee0826528ab0d31218f2f9bc3bf"
+          }
+        },
+        {
+          "client_id": "822623733361-gk5q6pg19bck44c8lmho3t10kakvv914.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFTIexv5H4qqG5LnVp5YBAm0NQbxblt-A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "822623733361-gk5q6pg19bck44c8lmho3t10kakvv914.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
