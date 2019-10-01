@@ -114,30 +114,15 @@
             app:layout_constraintStart_toStartOf="@+id/txtJenisBreed"
             app:layout_constraintTop_toBottomOf="@+id/txtJenisBreed" />
 
-        <RadioGroup
-            android:id="@+id/rg_gender"
+        <Spinner
+            android:id="@+id/spinJenisKelamin"
             android:layout_width="204dp"
             android:layout_height="45dp"
-            android:layout_marginTop="4dp"
-            android:orientation="horizontal"
-            android:paddingTop="0dp"
-            app:layout_constraintEnd_toEndOf="@id/spinJenisBreed"
-            app:layout_constraintStart_toStartOf="@id/spinJenisBreed"
-            app:layout_constraintTop_toBottomOf="@id/spinJenisBreed">
-
-            <androidx.appcompat.widget.AppCompatRadioButton
-                android:id="@+id/rb_betina"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Betina" />
-
-            <androidx.appcompat.widget.AppCompatRadioButton
-                android:id="@+id/rb_jantan"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="40dp"
-                android:text="Jantan" />
-        </RadioGroup>
+            android:entries="@array/Jenis_Kelamin"
+            app:layout_constraintBottom_toBottomOf="@+id/txtJenisKelamin"
+            app:layout_constraintEnd_toEndOf="@+id/spinJenisBreed"
+            app:layout_constraintStart_toStartOf="@+id/spinJenisBreed"
+            app:layout_constraintTop_toTopOf="@+id/txtJenisKelamin" />
 
 
         <TextView
@@ -157,8 +142,8 @@
             android:nextFocusDown="@id/edtUmur"
             android:singleLine="true"
             app:layout_constraintBottom_toBottomOf="@+id/txtUmur"
-            app:layout_constraintEnd_toEndOf="@+id/rg_gender"
-            app:layout_constraintStart_toStartOf="@+id/rg_gender"
+            app:layout_constraintEnd_toEndOf="@+id/spinJenisKelamin"
+            app:layout_constraintStart_toStartOf="@+id/spinJenisKelamin"
             app:layout_constraintTop_toTopOf="@+id/txtUmur" />
 
         <TextView
@@ -495,6 +480,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginEnd="8dp"
             android:layout_marginRight="8dp"
+            android:onClick="onClick"
             android:text="LIHAT"
             app:layout_constraintEnd_toEndOf="@+id/edtLokasi"
             app:layout_constraintStart_toEndOf="@+id/btnSimpanData"

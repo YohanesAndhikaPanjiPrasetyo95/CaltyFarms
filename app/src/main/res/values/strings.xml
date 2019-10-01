@@ -5,7 +5,10 @@
     <string name="prev">Kode OTP</string>
     <string name="prev1">Verifikasi</string>
     <string name="input_sapi">Input Data Sapi</string>
+    <string name="update_sapi">Update Data Sapi</string>
+    <string name="daftar_sapi">Data Sapi</string>
     <string name="lap_mingguan">Laporan Mingguan</string>
+    <string name="hub_dokter">Data Dokter</string>
     <string name="title_activity_kode_otp">KodeOTPActivity</string>
 
     <string-array name="Breed_Sapi">
@@ -25,6 +28,7 @@
     </string-array>
 
     <string-array name="Jenis_Kelamin">
+        <item>Pilih Jenis Kelamin</item>n
         <item>Betina</item>n
         <item>Jantan</item>
     </string-array>

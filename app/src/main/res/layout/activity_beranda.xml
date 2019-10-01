@@ -9,19 +9,24 @@
     android:scrollbars="vertical"
     tools:context=".BerandaActivity">
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="horizontal">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="392dp"
+            android:layout_height="64dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
             android:background="@color/bg_screen1"
             android:gravity="center"
             android:minHeight="?attr/actionBarSize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:theme="@style/ThemeOverlay.AppCompat.Dark">
 
@@ -32,18 +37,17 @@
 
                 <ImageView
                     android:id="@+id/imgBeranda"
-                    android:layout_width="wrap_content"
-                    android:layout_height="40dp"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginLeft="16dp"
+                    android:layout_width="141dp"
+                    android:layout_height="42dp"
+                    android:layout_marginStart="112dp"
+                    android:layout_marginLeft="112dp"
                     android:layout_marginTop="8dp"
-                    android:layout_marginEnd="8dp"
-                    android:layout_marginRight="8dp"
                     android:layout_marginBottom="8dp"
-                    android:background="@drawable/ic_beranda_samping"
+                    android:background="@drawable/ic_calty_samping"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.appcompat.widget.Toolbar>
 
@@ -68,17 +72,18 @@
                 android:layout_marginEnd="8dp"
                 android:layout_marginRight="8dp"
                 android:layout_marginBottom="8dp"
-                android:background="@drawable/ic_beranda" />
+                android:background="@drawable/ic_news_beranda" />
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cardVInput"
-            android:clickable="true"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
             android:layout_marginLeft="8dp"
             android:layout_marginTop="8dp"
+            android:clickable="true"
+            android:onClick="viewLayout"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/cardVBeranda">
@@ -89,7 +94,6 @@
 
                 <ImageView
                     android:id="@+id/imgInput"
-                    android:clickable="true"
                     android:layout_width="46dp"
                     android:layout_height="63dp"
                     android:layout_marginStart="8dp"
@@ -98,7 +102,7 @@
                     android:layout_marginEnd="8dp"
                     android:layout_marginRight="8dp"
                     android:layout_marginBottom="8dp"
-                    android:background="@drawable/ic_idsapi" />
+                    android:background="@drawable/ic_input_sapi" />
 
                 <TextView
                     android:id="@+id/txtTitleInput"
@@ -107,9 +111,12 @@
                     android:layout_above="@+id/txtDeskInput"
                     android:layout_alignStart="@+id/txtDeskInput"
                     android:layout_alignLeft="@+id/txtDeskInput"
+                    android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
                     android:text="Input Data Sapi"
+                    android:textSize="14dp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -119,10 +126,11 @@
                     android:layout_alignBottom="@+id/imgInput"
                     android:layout_marginStart="21dp"
                     android:layout_marginLeft="21dp"
-                    android:layout_marginBottom="4dp"
+                    android:layout_marginBottom="8dp"
                     android:layout_toEndOf="@+id/imgInput"
                     android:layout_toRightOf="@+id/imgInput"
-                    android:text="Membuat identitas sapi dengan mudah dan dapat diakses 24 Jam" />
+                    android:text="Membuat identitas sapi dengan mudah dan dapat diakses 24 Jam"
+                    android:textSize="12dp" />
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
 
@@ -133,6 +141,8 @@
             android:layout_marginStart="8dp"
             android:layout_marginLeft="8dp"
             android:layout_marginTop="8dp"
+            android:clickable="true"
+            android:onClick="viewLayout"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/cardVInput">
@@ -151,7 +161,7 @@
                     android:layout_marginEnd="8dp"
                     android:layout_marginRight="8dp"
                     android:layout_marginBottom="8dp"
-                    android:background="@drawable/ic_kepala" />
+                    android:background="@drawable/ic_daftar_status" />
 
                 <TextView
                     android:id="@+id/txtTitleDaftar"
@@ -160,9 +170,12 @@
                     android:layout_above="@+id/txtDeskDaftar"
                     android:layout_alignStart="@+id/txtDeskDaftar"
                     android:layout_alignLeft="@+id/txtDeskDaftar"
+                    android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
                     android:text="Daftar Status Sapi"
+                    android:textSize="14dp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -172,10 +185,11 @@
                     android:layout_alignBottom="@+id/imgDaftar"
                     android:layout_marginStart="21dp"
                     android:layout_marginLeft="21dp"
-                    android:layout_marginBottom="4dp"
+                    android:layout_marginBottom="8dp"
                     android:layout_toEndOf="@+id/imgDaftar"
                     android:layout_toRightOf="@+id/imgDaftar"
-                    android:text="Cek semua kondisi ternak secara akurat dan real time dari aplikasi Anda" />
+                    android:text="Cek semua kondisi ternak secara akurat dan real time dari aplikasi Anda"
+                    android:textSize="12dp" />
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
 
@@ -186,6 +200,8 @@
             android:layout_marginStart="8dp"
             android:layout_marginLeft="8dp"
             android:layout_marginTop="8dp"
+            android:clickable="true"
+            android:onClick="viewLayout"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/cardVDaftar">
@@ -204,7 +220,7 @@
                     android:layout_marginEnd="8dp"
                     android:layout_marginRight="8dp"
                     android:layout_marginBottom="8dp"
-                    android:background="@drawable/ic_lonceng" />
+                    android:background="@drawable/ic_alarm" />
 
                 <TextView
                     android:id="@+id/txtTitleAlarm"
@@ -213,9 +229,12 @@
                     android:layout_above="@+id/txtDeskAlarm"
                     android:layout_alignStart="@+id/txtDeskAlarm"
                     android:layout_alignLeft="@+id/txtDeskAlarm"
+                    android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
                     android:text="Tanda Alarm"
+                    android:textSize="14dp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -225,10 +244,11 @@
                     android:layout_alignBottom="@+id/imgAlarm"
                     android:layout_marginStart="21dp"
                     android:layout_marginLeft="21dp"
-                    android:layout_marginBottom="4dp"
+                    android:layout_marginBottom="8dp"
                     android:layout_toEndOf="@+id/imgAlarm"
                     android:layout_toRightOf="@+id/imgAlarm"
-                    android:text="Peringatan untuk tanda kondisi sapi secara realtime" />
+                    android:text="Peringatan untuk tanda kondisi sapi secara realtime"
+                    android:textSize="12dp" />
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
 
@@ -239,12 +259,14 @@
             android:layout_marginStart="8dp"
             android:layout_marginLeft="8dp"
             android:layout_marginTop="8dp"
+            android:clickable="true"
+            android:onClick="viewLayout"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/cardVAlarm">
 
             <RelativeLayout
-                android:layout_width="383dp"
+                android:layout_width="382dp"
                 android:layout_height="match_parent">
 
                 <ImageView
@@ -257,7 +279,7 @@
                     android:layout_marginEnd="8dp"
                     android:layout_marginRight="8dp"
                     android:layout_marginBottom="8dp"
-                    android:background="@drawable/ic_list" />
+                    android:background="@drawable/ic_list_sapi" />
 
                 <TextView
                     android:id="@+id/txtTitleTindakan"
@@ -266,9 +288,12 @@
                     android:layout_above="@+id/txtDeskTindakan"
                     android:layout_alignStart="@+id/txtDeskTindakan"
                     android:layout_alignLeft="@+id/txtDeskTindakan"
+                    android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
                     android:text="List Tindakan"
+                    android:textSize="14dp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -278,10 +303,11 @@
                     android:layout_alignBottom="@+id/imgTindakan"
                     android:layout_marginStart="21dp"
                     android:layout_marginLeft="21dp"
-                    android:layout_marginBottom="10dp"
+                    android:layout_marginBottom="8dp"
                     android:layout_toEndOf="@+id/imgTindakan"
                     android:layout_toRightOf="@+id/imgTindakan"
-                    android:text="Daftar tindakan yang diinstruksikan oleh dokter hewan" />
+                    android:text="Daftar tindakan yang diinstruksikan oleh dokter hewan"
+                    android:textSize="12dp" />
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
 
@@ -292,13 +318,15 @@
             android:layout_marginStart="8dp"
             android:layout_marginLeft="8dp"
             android:layout_marginTop="8dp"
+            android:clickable="true"
+            android:onClick="viewLayout"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/cardVTidakan">
 
             <RelativeLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_width="381dp"
+                android:layout_height="77dp">
 
                 <ImageView
                     android:id="@+id/imgHubDokter"
@@ -310,7 +338,7 @@
                     android:layout_marginEnd="8dp"
                     android:layout_marginRight="8dp"
                     android:layout_marginBottom="8dp"
-                    android:background="@drawable/ic_hubungi_dokter" />
+                    android:background="@drawable/ic_hub_dokter" />
 
                 <TextView
                     android:id="@+id/txtTitleHubDokter"
@@ -319,9 +347,12 @@
                     android:layout_above="@+id/txtDeskHubDokter"
                     android:layout_alignStart="@+id/txtDeskHubDokter"
                     android:layout_alignLeft="@+id/txtDeskHubDokter"
+                    android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
                     android:text="Hubungi Dokter Hewan"
+                    android:textSize="14dp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -331,11 +362,12 @@
                     android:layout_alignBottom="@+id/imgHubDokter"
                     android:layout_marginStart="21dp"
                     android:layout_marginLeft="21dp"
-                    android:layout_marginBottom="4dp"
+                    android:layout_marginBottom="8dp"
                     android:layout_toEndOf="@+id/imgHubDokter"
                     android:layout_toRightOf="@+id/imgHubDokter"
-                    android:text="Tanya jawab langsung dengan Dokter Hewan tentang kondisi ternak Anda" />
+                    android:text="Tanya jawab langsung dengan Dokter Hewan tentang kondisi ternak Anda"
+                    android:textSize="12dp" />
             </RelativeLayout>
         </androidx.cardview.widget.CardView>
-    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

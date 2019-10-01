@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.andhikapanjiprasetyo.caltyfarm">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_logo_calty"
@@ -9,6 +11,8 @@
         android:roundIcon="@mipmap/ic_logo_calty_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".HubungiDokterActivity"></activity>
+        <activity android:name=".TampilDataActivity" />
         <activity android:name=".SplashscreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -16,12 +20,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".BerandaActivity"/>
         <activity android:name=".KodeOTPActivity" />
         <activity android:name=".VerifikasiOTPActivity" />
+        <activity android:name=".BerandaActivity" />
         <activity android:name=".InputDataSapiActivity" />
         <activity android:name=".DaftarStatusSapiActivity" />
         <activity android:name=".LaporanMingguanActivity" />
+        <activity android:name=".DaftarSapiActivity" />
     </application>
 
 </manifest>

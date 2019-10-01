@@ -55,7 +55,7 @@ public class KodeOTPActivity extends AppCompatActivity {
 
     private void validNo(String no) {
         if (no.isEmpty() || no.length() < 11) {
-            mobile.setError("Masukkan Nomor Telepon yang Aktif..");
+            mobile.setError("Masukkan nomor telepon Anda yang Aktif..");
             mobile.requestFocus();
             return;
         }

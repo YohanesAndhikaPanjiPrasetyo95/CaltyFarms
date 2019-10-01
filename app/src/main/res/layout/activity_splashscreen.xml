@@ -10,9 +10,9 @@
 
     <ImageView
         android:id="@+id/logo_calty"
-        android:layout_width="182dp"
-        android:layout_height="148dp"
-        android:background="@drawable/ic_logo_calty"
+        android:layout_width="190dp"
+        android:layout_height="158dp"
+        android:background="@drawable/ic_calty_back_transparan"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

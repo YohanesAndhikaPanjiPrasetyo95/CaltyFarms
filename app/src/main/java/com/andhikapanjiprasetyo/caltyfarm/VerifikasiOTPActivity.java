@@ -131,8 +131,6 @@ public class VerifikasiOTPActivity extends AppCompatActivity {
             toast.setGravity(Gravity.CENTER,0,0);
             toast.show();
         }
-
-
     }
 
     private void signInWithPhoneAuthCredential(PhoneAuthCredential credential) {
@@ -150,13 +148,11 @@ public class VerifikasiOTPActivity extends AppCompatActivity {
 
                             //verification unsuccessful.. display an error message
 
-                            String message = "Somthing is wrong, we will fix it soon...";
+                            String message = "Ada yang salah, silahkan di coba lagi..";
 
                             if (task.getException() instanceof FirebaseAuthInvalidCredentialsException) {
-                                message = "Invalid code entered...";
+                                message = "Kode OTP yang Anda masukkan salah !!!";
                             }
-
-
                         }
                     }
                 });

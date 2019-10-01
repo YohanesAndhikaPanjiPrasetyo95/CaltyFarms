@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="?android:attr/listPreferredItemHeight"
+    android:padding="10dip" >
+
+    <ImageView
+        android:id="@+id/imv_kepala"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="0dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/ic_kepala" />
+
+    <TextView
+        android:id="@+id/tv_id"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="11dp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/imv_kepala"
+        android:gravity="center_vertical"
+        android:text="ID"
+        android:textColor="@color/txt_screen2"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_no_id"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="11dp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/tv_id"
+        android:gravity="center_vertical"
+        android:text="2398"
+        android:textColor="@color/txt_screen2"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_status_sehat"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="11dp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/tv_no_id"
+        android:gravity="center_vertical"
+        android:text="Sehat"
+        android:textColor="@color/txt_screen2"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_status_sakit"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="11dp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/tv_status_sehat"
+        android:gravity="center_vertical"
+        android:text="Sakit"
+        android:textColor="@color/txt_screen4"
+        android:textSize="16sp" />
+
+</RelativeLayout>

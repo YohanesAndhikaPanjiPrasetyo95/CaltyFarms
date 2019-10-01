@@ -8,8 +8,8 @@ import android.os.Handler;
 import android.widget.Space;
 
 public class SplashscreenActivity extends AppCompatActivity {
-    private int waktu_loading=4000;
-    //4000=4 detik
+    private int waktu_loading=3000;
+    //3000=3 detik
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,11 +21,9 @@ public class SplashscreenActivity extends AppCompatActivity {
             @Override
             public void run() {
 
-                //setelah loading maka akan langsung berpindah ke home activity
+                //setelah loading maka akan langsung berpindah ke BerandaActivity
                 Intent home=new Intent(SplashscreenActivity.this, BerandaActivity.class);
                 startActivity(home);
-                finish();
-
             }
         },waktu_loading);
     }

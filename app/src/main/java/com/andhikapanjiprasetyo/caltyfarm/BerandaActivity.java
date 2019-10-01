@@ -6,26 +6,35 @@ import androidx.cardview.widget.CardView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.Toast;
+
 
 public class BerandaActivity extends AppCompatActivity {
-    CardView cardVIn;
+    CardView cardVInput, cardVDaftar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_beranda);
+    }
 
-        cardVIn = findViewById(R.id.cardVInput);
-
-        cardVIn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(BerandaActivity.this, InputDataSapiActivity.class);
+    public void viewLayout(View v){
+        Intent intent;
+        switch (v.getId()){
+            case R.id.cardVInput :  intent = new Intent(BerandaActivity.this, InputDataSapiActivity.class);
                 startActivity(intent);
-            }
-        });
+                break;
+            case R.id.cardVDaftar :  intent = new Intent(BerandaActivity.this, DaftarStatusSapiActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.cardVAlarm:  intent = new Intent(BerandaActivity.this, DaftarStatusSapiActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.cardVTidakan:  intent = new Intent(BerandaActivity.this, DaftarStatusSapiActivity.class);
+                startActivity(intent);
+                break;
+            case R.id.cardVHubDokter:  intent = new Intent(BerandaActivity.this, DaftarStatusSapiActivity.class);
+                startActivity(intent);
+                break;
+        }
     }
 }
