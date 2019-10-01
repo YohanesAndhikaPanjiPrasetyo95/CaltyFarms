@@ -1,4 +1,4 @@
-package com.andhikapanjiprasetyo.caltyfarm;
+package com.andhikapanjiprasetyo.caltyfarm.network;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -14,7 +14,7 @@ public class NetworkConfig {
 
     public NetworkConfig(){}
 
-    public static <S> S createService(Class<S> serviceClass) {
+    public static ApiInterface createService() {
         Gson gson = new GsonBuilder()
                 .setDateFormat("yyyy-MM-dd'T'HH:mm:ssZ")
                 .create();
@@ -29,11 +29,11 @@ public class NetworkConfig {
 
 
         Retrofit builder = new Retrofit.Builder()
-                .baseUrl("http://192.168.43.51/db_caltyfarm/index.php")
+                .baseUrl("http://192.168.43.51/db_caltyfarm/index.php/")
                 .client(okHttpClient)
                 .addConverterFactory(GsonConverterFactory.create(gson))
                 .build();
 
-        return builder.create(serviceClass);
+        return builder.create(ApiInterface.class);
     }
 }
